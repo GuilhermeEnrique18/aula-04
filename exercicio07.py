@@ -1,7 +1,7 @@
 somaNotas = 0
-N = int(input())
-for i in range (1,5):
-    notas = int(input(f"informe o numero {i}: "))
+N = int(input("informe a quantidade de números que você quer para calcular a media: "))
+for i in range (1,N+1):
+    notas = int(input(f"informe a nota {i}: "))
     somaNotas = somaNotas + notas
-media = somaNotas / 5
-print(f"Sua media foi: {media}")
+media = somaNotas / N
+print(f"Sua media foi: {media:.2f}")
